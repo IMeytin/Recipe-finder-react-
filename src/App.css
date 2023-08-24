@@ -1,38 +1,171 @@
-.App {
+body {
+  background-color: #E8ECED;
+}
+
+.wrapper {
+  margin: 0px 130px;
+}
+
+h1 {
   text-align: center;
+  margin: 65px;
+  font-size: 50px;
+  color: #65862F;
+  font-family: 'Archivo Black', sans-serif;
+  letter-spacing: 1.5px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+form {
+  display: flex;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.search {
+  width: 60%;
+  border: #65862F 3px solid;
+  border-right: none;
+  border-radius: 20px 0px 0px 20px;
+  font-size: 22px;
+  color: #65862F;
+  padding: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.btn {
+  color: #65862F;
+  background-color: #FFFFFF;
+  padding: 5px;
+  width: 65px;
+  border: #65862F 3px solid;
+  border-radius: 0px 20px 20px 0px;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #65862F;
+  color: #FFFFFF;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  padding: 25px;
+  margin-top: 80px;
+  width: 300px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  font-family: 'Roboto', sans-serif;
+}
+img {
+  width: 350px;
 }
 
-.App-link {
-  color: #61dafb;
+.card-title {
+  color: #65862F;
+  margin: 10px;
+  font-size: 23px;
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+ul {
+  padding: 0;
+  align-self: start;
+  margin-left: 30px;
+  color: #65862F;
+}
+li {
+  padding: 3px;
+  font-size: 15px
+}
+
+.calories {
+  margin: 0;
+  color: #65862F;
+  font-size: 15px;
+  background-color: #65862F;
+  color: #FFFFFF;
+  padding: 5px;
+  border-radius: 10px;
+}
+.recipe-link {
+  text-decoration: none;
+  text-align: center;
+  margin-top: auto;
+  background-color: #65862F;
+  color: #FFFFFF;
+  padding: 10px;
+  width: 70%;
+  border-radius: 10px;
+  font-size: 18px;
+}
+@media all and (max-width: 800px){
+  .wrapper {
+      margin-right: 80px;
+      margin-left: 80px;
   }
-  to {
-    transform: rotate(360deg);
+  h1 {
+      margin: 100px 50px 50px;
+      font-size: 40px;
+  }
+  .search {
+      font-size: 20px;
+  }
+  .card {
+      width: 250px;
+  }
+  img {
+    width: 100%;
+  }
+  .card-title {
+      font-size: 21px;
+  }
+  .recipe-link {
+      font-size: 16px;
+  }
+  .calories {
+    font-size: 13px;
+  }
+  li {
+    font-size: 14px;
+  }
+}
+@media all and (max-width: 500px){
+  .wrapper {
+      margin-left: 20px;
+      margin-right: 20px;
+  }
+  h1 {
+      margin: 80px 20px 40px;
+      font-size: 33px;
+  }
+  .search {
+      padding: 8px;
+      font-size: 18px;
+  }
+  .btn {
+    width: 50px;
+  }
+  .card {
+      margin-top: 50px;
+  }
+  .card-title {
+      font-size: 17px;
+  }
+  .recipe-link {
+      font-size: 14px;
+      width: 60%;
+  }
+  .calories {
+    font-size: 12px;
+  }
+  li {
+    font-size: 13px;
   }
 }
